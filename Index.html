@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pernikahan Rafa & Rani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="cover">
+        <div class="cover-content">
+            <p>Undangan Pernikahan</p>
+            <h1>Yudhi & Santi</h1>
+            <p class="event-date">Sabtu, 14 Februari 2026</p> <div class="recipient">
+                <p>Kepada Yth.</p>
+                <h2 id="guest-name">Bapak/Ibu/Saudara/i</h2>
+            </div>
+            
+            <button id="open-invitation">
+                Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <main id="content">
+
+        <audio id="background-music" src="lagu.mp3" loop></audio>
+        <button id="play-pause-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        </button>
+
+        <header class="hero">
+            <div class="hero-content">
+                <p>The Wedding Of</p>
+                <h1>Yudhi & Santi</h1>
+            </div>
+        </header>
+
+        <section class="quote card animate-on-scroll">
+            <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."</p>
+            <p><strong>(Q.S. Ar-Rum: 21)</strong></p>
+        </section>
+
+        <section id="countdown" class="card animate-on-scroll">
+            <h3>Menuju Hari Bahagia</h3>
+            <div id="timer">
+                <div class="time-box"><span id="days">00</span> Hari</div>
+                <div class="time-box"><span id="hours">00</span> Jam</div>
+                <div class="time-box"><span id="minutes">00</span> Menit</div>
+                <div class="time-box"><span id="seconds">00</span> Detik</div>
+            </div>
+        </section>
+
+        <section id="agenda" class="card animate-on-scroll">
+            <h2>Agenda Acara</h2>
+            <div class="agenda-container">
+                <div class="agenda-item">
+                    <h3>Akad Nikah</h3>
+                    <p><strong>Pukul:</strong> 07.00 WIB</p>
+                    <p><strong>Tempat:</strong> Gedung A, Bandung</p> </div>
+                <div class="agenda-item">
+                    <h3>Resepsi</h3>
+                    <p><strong>Pukul:</strong> 10.00 WIB</p>
+                    <p><strong>Tempat:</strong> Gedung A, Bandung</p> </div>
+            </div>
+        </section>
+
+        <section id="location" class="card animate-on-scroll">
+            <h2>Lokasi Acara</h2>
+            <p>Gedung A, Jl. Merdeka No. 123, Bandung</p> <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.902644260337!2d107.6168096153097!3d-6.902206695012502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c5e8866e5%3A0x37be7ac9d575f7ed!2sGedung%20Sate!5e0!3m2!1sid!2sid!4v1667888888888" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <a href="#" class="btn-primary" target="_blank">Buka di Google Maps</a> </section>
+
+        <section id="gallery" class="card animate-on-scroll">
+            <h2>Galeri Foto</h2>
+            <div class="gallery-grid">
+                <img src="img/p.jpg" alt="">
+                <img src="img/a.jpg" alt="Foto Rafa & Rani 2">
+                <img src="img/b.jpg" alt="Foto Rafa & Rani 3">
+            </div>
+        </section>
+
+        <section id="comments" class="card animate-on-scroll">
+            <h2>Buku Tamu & Ucapan</h2>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Nama:</label>
+                    <input type="text" id="comment-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-message">Ucapan:</label>
+                    <textarea id="comment-message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Kirim Ucapan</button>
+            </form>
+            <div id="comment-display">
+                <p><strong>Fitur Komentar:</strong> Form ini hanya tampilan. Untuk menyimpan komentar, Anda perlu menghubungkannya ke database (backend).</p>
+            </div>
+        </section>
+
+        <section id="digital-gift" class="card animate-on-scroll">
+            <h2>Amplop Digital</h2>
+            <p>Bagi yang ingin memberikan tanda kasih, dapat melalui:</p>
+            <button id="gift-button" class="btn-primary">Klik di Sini</button>
+        </section>
+
+        <div id="gift-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h2>Kirim Hadiah</h2>
+                <p>Anda dapat mengirimkan hadiah pernikahan melalui rekening berikut:</p>
+                <div class="bank-details">
+                    <p><strong>Bank BCA</strong><br>
+                    No. Rek: 1234567890<br>
+                    a.n. Yudhi & Santi</p>
+                </div>
+                <div class="bank-details">
+                    <p><strong>Bank Mandiri</strong><br>
+                    No. Rek: 0987654321<br>
+                    a.n. Yudhi & Santi</p>
+                </div>
+                <button class="btn-copy">Salin No. Rek BCA</button>
+            </div>
+        </div>
+
+        <footer class="animate-on-scroll">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+            <p>Terima kasih.</p>
+            <div class="footer-names">Yudhi & Santi</div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
